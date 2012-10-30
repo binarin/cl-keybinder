@@ -23,7 +23,7 @@
                   (callback keybinder-handler)
                   (gobject:allocate-stable-pointer handler)))
 
-(defcfun (keybinder_unbind keybinder_unbind) :void
+(defcfun ("keybinder_unbind" keybinder_unbind) :void
   (keystring :string)
   (handler :pointer))
 
